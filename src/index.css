@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-style: italic;
+}
+.primary-title {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+}
+.Primary-button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px;
+}
+.Primary-button:hover {
+  background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64));
+}
+.secondary-button {
+  color: rgb(121.119, 119);
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: solid 2px rgb(121.119, 119);
+  margin: 4px;
+}
+.secondary-button:hover {
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb(48, 48, 48);
+}
+/* -----navBar--- */
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+nav {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+nav .nav-button {
+  color: rgb(254, 48, 114);
+  background-color: rgb(244, 255, 255);
+  font-size: large;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+nav .nav-button:disabled {
+  background-color: rgba(189, 180, 180, 0.422);
+  color: rgb(160, 38, 75);
+}
+nav .logo.container {
+  width: 170px;
+  margin: 15px;
+}
+nav .logo.container .logo {
+  width: 100%;
+}
+
+/* -----homePage-------- */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("images/male2.jpg");
+}
+.Home {
+  margin-top: 30vh;
+}
+
+/* ----AUto Model----- */
+.auth-model {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 360px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 40px;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 21, 36),
+    rgb(34, 23, 150),
+    rgb(182, 154, 183),
+    rgb(166, 75, 184),
+    rgb(96, 5, 3)
+  );
+  transition: background 0.5s ease, transform 0.5s ease;
+}
+.auth-model:hover {
+  background: linear-gradient(
+    260deg,
+    rgb(96, 5, 3),
+    rgb(166, 75, 184),
+    rgb(182, 154, 183),
+    rgb(34, 23, 150),
+    rgb(16, 21, 36)
+  );
+  transform: scale(1.05);
+}
+.auth-model .close-icon {
+  float: right;
+}
+.auth-model form {
+  display: flex;
+  flex-direction: column;
+}
+.auth-model input[type="password"],
+.auth-model input[type="email"] {
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+}
+
+/* ---- onboarding page --- */
+.onBoarding {
+  border-top: solid 1px rgb(154, 154, 154);
+}
+.onBoarding form {
+  display: flex;
+  justify-content: center;
+}
+.onBoarding form section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 35%;
+  text-align: start;
+}
+.onBoarding form input {
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.onBoarding form label {
+  margin: 10px 0;
+}
+
+.onBoarding form .multiple-input-container {
+  display: flex;
+  flex-direction: row;
+}
+.onBoarding form .multiple-input-container input {
+  margin-right: 10px;
+}
+.onBoarding form .multiple-input-container label {
+  padding: 10px;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+.onBoarding form input[type="radio"] {
+  display: none;
+}
+.onBoarding form input[type="number"] {
+  width: 10%;
+}
+.onBoarding form input[type="radio"]:checked + label {
+  border: solid 2px rgb(221, 39, 22);
+}
+.onBoarding form input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+}
+.onBoarding form input[type="submit"]:active {
+  background-color: rgb(226, 115, 155);
+}
+.onBoarding form .photo-container {
+  width: 100%;
+}
+/* ---dashBoard--- */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .swiper-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.swipe {
+  position: absolute;
+}
+.dashboard .card-container {
+  width: 400px;
+  height: 550px;
+}
+.card {
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 10px 5px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+.dashboard .swipe-info {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+/* ---chat container---- */
+.chat-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 24px 0px rgb(219, 219, 219);
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+}
+.chat-container-header {
+  background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-container .option {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 4px rgb(246, 33, 33);
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+.chat-container .option:disabled {
+  border-bottom: solid 4px rgb(187, 187, 187);
+}
+.chat-container .profile,
+.chat-container .log-out-icon {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+.img-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+.img-container img {
+  width: 100%;
+}
+
+/* ---chatDisplay--- */
+.chat-display {
+  padding: 20px;
+  height: 60vh;
+  overflow: auto;
+}
+/* -----chat-input----- */
+.chat-input {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
